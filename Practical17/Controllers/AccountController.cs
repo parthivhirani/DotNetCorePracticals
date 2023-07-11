@@ -6,6 +6,8 @@ using Practical17.Models;
 using Practical17.Repository;
 using Practical17.ViewModel;
 using System.Security.Claims;
+using Microsoft.AspNetCore.Authorization;
+using Practical17.Utilities;
 
 namespace Practical17.Controllers
 {
@@ -23,8 +25,24 @@ namespace Practical17.Controllers
             return View();
         }
 
+        [HttpPost, HttpGet]
+        [AllowAnonymous]
+        public async Task<IActionResult> IsEmailExist(string email)
+        {
+            var user = await _repository.GetUserByEmailAsync(email);
+            if (user == null)
+            {
+                return Json(true);
+            }
+            else
+            {
+                return Json($"Email {email} is already exists.");
+            }
+        }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [ValidateEmailDomain(allowDomain: "gmail.com", ErrorMessage = "Email domain must be gmail.com")]
         public async Task<IActionResult> Register(RegisterViewModel user)
         {
             if (ModelState.IsValid)
@@ -32,13 +50,12 @@ namespace Practical17.Controllers
                 var temp = await _repository.GetUserByEmailAsync(user.Email);
                 if (temp == null)
                 {
-
                     await _repository.RegisterUserAsync(user);
                     return RedirectToAction(nameof(Login));
                 }
                 else
                 {
-                    ModelState.AddModelError("", "User already registered!");
+                    ModelState.AddModelError("", "User already exist!");
                     return View(user);
                 }
             }

@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Mvc;
+using System.ComponentModel.DataAnnotations;
 
 namespace Practical17.ViewModel
 {
@@ -17,6 +18,7 @@ namespace Practical17.ViewModel
 
         [Required]
         [DataType(DataType.EmailAddress)]
+        [Remote(action:"IsEmailExist", controller:"Account")]
         public string Email { get; set; }
 
         [Required]

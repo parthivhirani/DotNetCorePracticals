@@ -10,9 +10,9 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3 w-75 m-auto">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Practical17</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Practical-17</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -20,21 +20,21 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     @if (User.Identity.IsAuthenticated)
                     {
-                        <ul class="navbar-nav flex-grow-1">
-                            <li class="nav-link text-black">@User.Identity.Name</li>
+                        <ul class="navbar-nav flex-grow-1 justify-content-end">
+                            <li class="nav-link text-black">Welcome, @User.Identity.Name</li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Logout">Logout</a>
+                                <a class="nav-link text-danger" asp-area="" asp-controller="Account" asp-action="Logout">Logout</a>
                             </li>
                         </ul>
                     }
                     else
                     {
-                        <ul class="navbar-nav flex-grow-1">
+                        <ul class="navbar-nav flex-grow-1 justify-content-end">
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Login">Login</a>
+                                <a class="nav-link text-primary" asp-area="" asp-controller="Account" asp-action="Login">Login</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Register">Register</a>
+                                <a class="nav-link text-primary" asp-area="" asp-controller="Account" asp-action="Register">Register</a>
                             </li>
                         </ul>
                     }
@@ -50,9 +50,12 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2023 - Practical17
+            &copy; 2023 - Practical-17
         </div>
     </footer>
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
