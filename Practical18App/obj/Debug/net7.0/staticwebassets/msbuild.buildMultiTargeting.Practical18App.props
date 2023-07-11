@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Practical18App.props" />
+</Project>
