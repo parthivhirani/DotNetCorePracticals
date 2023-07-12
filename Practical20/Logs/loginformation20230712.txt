@@ -1,0 +1,108 @@
+2023-07-12 13:45:33.618 +05:30 [INF] User profile is available. Using 'C:\Users\parthiv\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-07-12 13:45:33.884 +05:30 [FTL] Application startup exception
+System.InvalidOperationException: Unable to resolve service for type 'Serilog.Extensions.Hosting.DiagnosticContext' while attempting to activate 'Serilog.AspNetCore.RequestLoggingMiddleware'.
+   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass5_0.<UseMiddleware>b__0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2023-07-12 13:53:28.728 +05:30 [INF] User profile is available. Using 'C:\Users\parthiv\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-07-12 13:53:28.948 +05:30 [INF] Now listening on: https://localhost:7119
+2023-07-12 13:53:28.949 +05:30 [INF] Now listening on: http://localhost:5075
+2023-07-12 13:53:28.950 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-12 13:53:28.951 +05:30 [INF] Hosting environment: Development
+2023-07-12 13:53:28.951 +05:30 [INF] Content root path: C:\Users\parthiv\Documents\Parthiv\ASP .NET Core\Practicals\Practical20
+2023-07-12 13:53:29.530 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/ - -
+2023-07-12 13:53:29.590 +05:30 [INF] Executing endpoint 'Practical20.Controllers.HomeController.Index (Practical20)'
+2023-07-12 13:53:29.617 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Practical20.Controllers.HomeController (Practical20).
+2023-07-12 13:53:29.629 +05:30 [INF] Executing ViewResult, running view Index.
+2023-07-12 13:53:29.778 +05:30 [INF] Executed ViewResult - view Index executed in 151.706ms.
+2023-07-12 13:53:29.784 +05:30 [INF] Executed action Practical20.Controllers.HomeController.Index (Practical20) in 165.0621ms
+2023-07-12 13:53:29.785 +05:30 [INF] Executed endpoint 'Practical20.Controllers.HomeController.Index (Practical20)'
+2023-07-12 13:53:29.788 +05:30 [INF] HTTP GET / responded 200 in 221.5977 ms
+2023-07-12 13:53:29.816 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/Practical20.styles.css?v=o6EZYILgNBoquticJ_uSlfPPArj73yyc3tZCSxxoW1Q - -
+2023-07-12 13:53:29.817 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/ - - - 200 - text/html;+charset=utf-8 288.3107ms
+2023-07-12 13:53:29.816 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0 - -
+2023-07-12 13:53:29.816 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - -
+2023-07-12 13:53:29.817 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/lib/jquery/dist/jquery.min.js - -
+2023-07-12 13:53:29.816 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/lib/bootstrap/dist/css/bootstrap.min.css - -
+2023-07-12 13:53:29.826 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/lib/bootstrap/dist/js/bootstrap.bundle.min.js - -
+2023-07-12 13:53:29.860 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - -
+2023-07-12 13:53:29.865 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - -
+2023-07-12 13:53:29.889 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 72.2515ms
+2023-07-12 13:53:29.889 +05:30 [INF] The file /css/site.css was not modified
+2023-07-12 13:53:29.889 +05:30 [INF] The file /Practical20.styles.css was not modified
+2023-07-12 13:53:29.889 +05:30 [INF] The file /lib/jquery/dist/jquery.min.js was not modified
+2023-07-12 13:53:29.889 +05:30 [INF] The file /lib/bootstrap/dist/css/bootstrap.min.css was not modified
+2023-07-12 13:53:29.894 +05:30 [INF] HTTP GET /css/site.css responded 304 in 27.7658 ms
+2023-07-12 13:53:29.894 +05:30 [INF] HTTP GET /Practical20.styles.css responded 304 in 28.4675 ms
+2023-07-12 13:53:29.898 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0 - - - 304 - text/css 82.1302ms
+2023-07-12 13:53:29.900 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/Practical20.styles.css?v=o6EZYILgNBoquticJ_uSlfPPArj73yyc3tZCSxxoW1Q - - - 304 - text/css 83.7159ms
+2023-07-12 13:53:29.895 +05:30 [INF] HTTP GET /lib/jquery/dist/jquery.min.js responded 304 in 25.5347 ms
+2023-07-12 13:53:29.896 +05:30 [INF] HTTP GET /lib/bootstrap/dist/css/bootstrap.min.css responded 304 in 26.7846 ms
+2023-07-12 13:53:29.889 +05:30 [INF] The file /lib/bootstrap/dist/js/bootstrap.bundle.min.js was not modified
+2023-07-12 13:53:29.910 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/lib/jquery/dist/jquery.min.js - - - 304 - text/javascript 92.9667ms
+2023-07-12 13:53:29.912 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/lib/bootstrap/dist/css/bootstrap.min.css - - - 304 - text/css 95.4045ms
+2023-07-12 13:53:29.915 +05:30 [INF] HTTP GET /lib/bootstrap/dist/js/bootstrap.bundle.min.js responded 304 in 44.7337 ms
+2023-07-12 13:53:29.889 +05:30 [INF] The file /js/site.js was not modified
+2023-07-12 13:53:29.925 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 304 - text/javascript 97.8534ms
+2023-07-12 13:53:29.927 +05:30 [INF] HTTP GET /js/site.js responded 304 in 52.8649 ms
+2023-07-12 13:53:29.932 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - - - 304 - text/javascript 72.4245ms
+2023-07-12 13:53:29.963 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 97.7965ms
+2023-07-12 13:53:36.288 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/User - -
+2023-07-12 13:53:36.292 +05:30 [INF] Executing endpoint 'Practical20.Controllers.UserController.Index (Practical20)'
+2023-07-12 13:53:36.299 +05:30 [INF] Route matched with {action = "Index", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller Practical20.Controllers.UserController (Practical20).
+2023-07-12 13:53:36.675 +05:30 [WRN] The property 'AuditEntry.Changes' is a collection or enumeration type with a value converter but with no value comparer. Set a value comparer to ensure the collection/enumeration elements are compared correctly.
+2023-07-12 13:53:44.198 +05:30 [INF] Index method called
+2023-07-12 13:53:44.200 +05:30 [INF] User Data!
+2023-07-12 13:53:44.579 +05:30 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[Name], [u].[Password]
+FROM [Users] AS [u]
+2023-07-12 13:53:44.633 +05:30 [INF] Executing ViewResult, running view Index.
+2023-07-12 13:53:44.656 +05:30 [INF] Executed ViewResult - view Index executed in 23.9382ms.
+2023-07-12 13:53:44.657 +05:30 [INF] Executed action Practical20.Controllers.UserController.Index (Practical20) in 8357.0277ms
+2023-07-12 13:53:44.658 +05:30 [INF] Executed endpoint 'Practical20.Controllers.UserController.Index (Practical20)'
+2023-07-12 13:53:44.659 +05:30 [INF] HTTP GET /User responded 200 in 8369.0760 ms
+2023-07-12 13:53:44.668 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - -
+2023-07-12 13:53:44.668 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - -
+2023-07-12 13:53:44.673 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 4.4194ms
+2023-07-12 13:53:44.673 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/User - - - 200 - text/html;+charset=utf-8 8386.6441ms
+2023-07-12 13:53:44.697 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 29.5765ms
+2023-07-12 14:02:28.639 +05:30 [INF] User profile is available. Using 'C:\Users\parthiv\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-07-12 14:02:29.003 +05:30 [INF] Now listening on: https://localhost:7119
+2023-07-12 14:02:29.037 +05:30 [INF] Now listening on: http://localhost:5075
+2023-07-12 14:02:29.040 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-12 14:02:29.047 +05:30 [INF] Hosting environment: Development
+2023-07-12 14:02:29.048 +05:30 [INF] Content root path: C:\Users\parthiv\Documents\Parthiv\ASP .NET Core\Practicals\Practical20
+2023-07-12 14:02:29.587 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/ - -
+2023-07-12 14:02:29.700 +05:30 [INF] Executing endpoint 'Practical20.Controllers.HomeController.Index (Practical20)'
+2023-07-12 14:02:29.746 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Practical20.Controllers.HomeController (Practical20).
+2023-07-12 14:02:29.761 +05:30 [INF] Executing ViewResult, running view Index.
+2023-07-12 14:02:29.923 +05:30 [INF] Executed ViewResult - view Index executed in 165.2472ms.
+2023-07-12 14:02:29.932 +05:30 [INF] Executed action Practical20.Controllers.HomeController.Index (Practical20) in 184.3664ms
+2023-07-12 14:02:29.933 +05:30 [INF] Executed endpoint 'Practical20.Controllers.HomeController.Index (Practical20)'
+2023-07-12 14:02:29.939 +05:30 [INF] HTTP GET / responded 200 in 294.4905 ms
+2023-07-12 14:02:29.963 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/ - - - 200 - text/html;+charset=utf-8 379.8514ms
+2023-07-12 14:02:29.964 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - -
+2023-07-12 14:02:29.964 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - -
+2023-07-12 14:02:29.986 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 22.1303ms
+2023-07-12 14:02:30.028 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 64.6553ms
+2023-07-12 14:02:31.144 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/User - -
+2023-07-12 14:02:31.146 +05:30 [INF] Executing endpoint 'Practical20.Controllers.UserController.Index (Practical20)'
+2023-07-12 14:02:31.154 +05:30 [INF] Route matched with {action = "Index", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller Practical20.Controllers.UserController (Practical20).
+2023-07-12 14:02:31.511 +05:30 [WRN] The property 'AuditEntry.Changes' is a collection or enumeration type with a value converter but with no value comparer. Set a value comparer to ensure the collection/enumeration elements are compared correctly.
+2023-07-12 14:02:31.614 +05:30 [INF] User Data
+2023-07-12 14:02:31.988 +05:30 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[Name], [u].[Password]
+FROM [Users] AS [u]
+2023-07-12 14:02:32.040 +05:30 [INF] Executing ViewResult, running view Index.
+2023-07-12 14:02:32.061 +05:30 [INF] Executed ViewResult - view Index executed in 22.2061ms.
+2023-07-12 14:02:32.062 +05:30 [INF] Executed action Practical20.Controllers.UserController.Index (Practical20) in 907.4193ms
+2023-07-12 14:02:32.063 +05:30 [INF] Executed endpoint 'Practical20.Controllers.UserController.Index (Practical20)'
+2023-07-12 14:02:32.064 +05:30 [INF] HTTP GET /User responded 200 in 919.3146 ms
+2023-07-12 14:02:32.069 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - -
+2023-07-12 14:02:32.070 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - -
+2023-07-12 14:02:32.072 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 2.7726ms
+2023-07-12 14:02:32.081 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/User - - - 200 - text/html;+charset=utf-8 937.6159ms
+2023-07-12 14:02:32.095 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 24.1333ms

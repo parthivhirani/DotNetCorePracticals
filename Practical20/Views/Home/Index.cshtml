@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Practical-20";
+}
+
+<div>
+    <h4>Test the Global Exception Handling</h4>    
+    <hr />
+</div>
+
+<div class="container text-center">
+    <div class="row g-2">
+        <div class="col-4">
+            <div class="p-3"><a class="btn btn-danger w-100" asp-action="Ambiguous" asp-controller="Home">Ambiguous Example</a></div>
+        </div>
+        <div class="col-4">
+            <div class="p-3"><a class="btn btn-danger w-100" asp-action="BadRequest" asp-controller="Home">BadRequest Example</a></div>
+        </div>
+        <div class="col-4">
+            <div class="p-3"><a class="btn btn-danger w-100" asp-action="InternalServerError" asp-controller="Home">Internal Server Error Example</a></div>
+        </div>
+        <div class="col-4">
+            <div class="p-3"><a class="btn btn-danger w-100" asp-action="LoopDetected" asp-controller="Home">LoopDetected Example </a></div>
+        </div>
+        <div class="col-4">
+            <div class="p-3"><a class="btn btn-danger w-100" asp-action="NotFound" asp-controller="Home">NotFound Example</a></div>
+        </div>
+        <div class="col-4">
+            <div class="p-3"><a class="btn btn-danger w-100" asp-action="UnAuthorizeError" asp-controller="Home">Authorization Error Example</a></div>
+        </div>
+    </div>
+</div>
