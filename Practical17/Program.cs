@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Practical17.DataContext;
 using Practical17.Models;
 using Practical17.Repository;
+using Practical17.Security;
 
 namespace Practical17
 {
@@ -37,6 +38,7 @@ namespace Practical17
 
             builder.Services.AddScoped<IStudentRepository, StudentRepository>();
             builder.Services.AddScoped<IUserRepository, UserRepository>();
+            builder.Services.AddSingleton<DataProtectionPurposeString>();
 
             var app = builder.Build();
 

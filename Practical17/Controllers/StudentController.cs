@@ -1,7 +1,9 @@
 ﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.DataProtection;
 using Microsoft.AspNetCore.Mvc;
 using Practical17.Models;
 using Practical17.Repository;
+using Practical17.Security;
 
 namespace Practical17.Controllers
 {
@@ -9,27 +11,37 @@ namespace Practical17.Controllers
     public class StudentController : Controller
     {
         private readonly IStudentRepository _repository;
+        private readonly IDataProtector protector;
 
 
-        public StudentController(IStudentRepository repository)
+        public StudentController(IStudentRepository repository, 
+                IDataProtectionProvider dataProtectionProvider,
+                DataProtectionPurposeString dataProtectionPurposeString)
         {
             _repository = repository;
+            protector = dataProtectionProvider.CreateProtector(dataProtectionPurposeString.EmployeeIdRouteValue);
         }
 
 
         public IActionResult Index()
         {
-            return _repository.GetStudents() != null ? View(_repository.GetStudents()) : Problem("There is no Students!");
+            return _repository.GetStudents() != null ? View(_repository.GetStudents().Select(s =>
+            {
+                s.EncryptedRollNo = protector.Protect(s.RollNo.ToString());
+                return s;
+            })) : Problem("There is no Students!");
         }
 
-        public IActionResult Details(int? id)
+        public IActionResult Details(string? id)
         {
-            if (id == null || _repository.GetStudents() == null)
+            int decryptedId = Convert.ToInt32(protector.Unprotect(id));
+            if (decryptedId == null || _repository.GetStudents() == null)
             {
                 return NotFound();
             }
 
-            var student = _repository.GetStudentById(id ?? 0);
+            var student = _repository.GetStudentById(decryptedId);
+            student.EncryptedRollNo = id;
 
             if (student == null)
             {
@@ -49,7 +61,7 @@ namespace Practical17.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> CreateAsync(Student student)
-        {
+         {
             if (ModelState.IsValid)
             {
                 await _repository.AddStudentAsync(student);
@@ -59,14 +71,16 @@ namespace Practical17.Controllers
         }
 
         [Authorize(Roles = "Admin")]
-        public IActionResult Edit(int? id)
+        public IActionResult Edit(string? id)
         {
-            if (id == null || _repository.GetStudents() == null)
+            int? decryptedId = Convert.ToInt32(protector.Unprotect(id));
+            if (decryptedId == null || _repository.GetStudents() == null)
             {
                 return NotFound();
             }
 
-            var student = _repository.GetStudentById(id ?? 0);
+            var student = _repository.GetStudentById(decryptedId ?? 0);
+
             if (student == null)
             {
                 return NotFound();
@@ -78,30 +92,32 @@ namespace Practical17.Controllers
         [Authorize(Roles = "Admin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, Student student)
+        public async Task<IActionResult> Edit(string id, Student student)
         {
-            if (id != student.RollNo)
+            int decryptedId = Convert.ToInt32(protector.Unprotect(id));
+            if (decryptedId != student.RollNo)
             {
                 return NotFound();
             }
 
             if (ModelState.IsValid)
             {
-                await _repository.UpdateStudentAsync(id, student);
+                await _repository.UpdateStudentAsync(decryptedId, student);
                 return RedirectToAction(nameof(Index));
             }
             return View(student);
         }
 
         [Authorize(Roles = "Admin")]
-        public IActionResult Delete(int? id)
+        public IActionResult Delete(string? id)
         {
-            if (id == null || _repository.GetStudents() == null)
+            int decryptedId = Convert.ToInt32(protector.Unprotect(id));
+            if (decryptedId == null || _repository.GetStudents() == null)
             {
                 return NotFound();
             }
 
-            var student = _repository.GetStudentById(id ?? 0);
+            var student = _repository.GetStudentById(decryptedId);
 
             if (student == null)
             {
@@ -114,16 +130,17 @@ namespace Practical17.Controllers
         [Authorize(Roles = "Admin")]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public async Task<IActionResult> DeleteConfirmed(string id)
         {
+            int decryptedId = Convert.ToInt32(protector.Unprotect(id));
             if (_repository.GetStudents() == null)
             {
-                return Problem("Entity set 'DatabaseContext.Students'  is null.");
+                return Problem("Entity set 'DatabaseContext.Students' is null.");
             }
-            var student = _repository.GetStudentById(id);
+            var student = _repository.GetStudentById(decryptedId);
             if (student != null)
             {
-                await _repository.DeleteStudentAsync(id);
+                await _repository.DeleteStudentAsync(decryptedId);
             }
 
             return RedirectToAction(nameof(Index));

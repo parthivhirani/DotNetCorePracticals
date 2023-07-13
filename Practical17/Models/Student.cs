@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Xml.Linq;
 
 namespace Practical17.Models
@@ -7,6 +8,9 @@ namespace Practical17.Models
     {
         [Key]
         public int RollNo { get; set; }
+
+        [NotMapped]
+        public string? EncryptedRollNo { get; set; }
 
         [Required]
         [MaxLength(50, ErrorMessage = "Max. length is 50")]

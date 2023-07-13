@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\parthiv\OneDrive - Simform Solutions Pvt. Ltd\Desktop\Publish</_PublishTargetUrl>
+    <History>True|2023-07-12T08:46:13.7979169Z;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="StudentDbConnection">
+      <Value>data source=.%3b database=CorePractical17%3b user id=parthiv%3b password=Rmha%4012345678%3b TrustServerCertificate=true%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="Practical17.DataContext.StudentDbContext">
+      <Value>data source=.%3b database=CorePractical17%3b user id=parthiv%3b password=Rmha%4012345678%3b TrustServerCertificate=true%3b</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>
