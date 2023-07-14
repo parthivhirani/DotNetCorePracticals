@@ -106,3 +106,92 @@ FROM [Users] AS [u]
 2023-07-12 14:02:32.072 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 2.7726ms
 2023-07-12 14:02:32.081 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/User - - - 200 - text/html;+charset=utf-8 937.6159ms
 2023-07-12 14:02:32.095 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 24.1333ms
+2023-07-12 14:35:26.343 +05:30 [INF] User profile is available. Using 'C:\Users\parthiv\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-07-12 14:35:27.028 +05:30 [INF] Now listening on: https://localhost:7119
+2023-07-12 14:35:27.029 +05:30 [INF] Now listening on: http://localhost:5075
+2023-07-12 14:35:27.031 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-12 14:35:27.031 +05:30 [INF] Hosting environment: Development
+2023-07-12 14:35:27.032 +05:30 [INF] Content root path: C:\Users\parthiv\Documents\Parthiv\ASP .NET Core\Practicals\Practical20
+2023-07-12 14:35:28.017 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/ - -
+2023-07-12 14:35:28.097 +05:30 [INF] Executing endpoint 'Practical20.Controllers.HomeController.Index (Practical20)'
+2023-07-12 14:35:28.144 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Practical20.Controllers.HomeController (Practical20).
+2023-07-12 14:35:28.172 +05:30 [INF] Executing ViewResult, running view Index.
+2023-07-12 14:35:28.491 +05:30 [INF] Executed ViewResult - view Index executed in 329.9633ms.
+2023-07-12 14:35:28.498 +05:30 [INF] Executed action Practical20.Controllers.HomeController.Index (Practical20) in 351.5598ms
+2023-07-12 14:35:28.499 +05:30 [INF] Executed endpoint 'Practical20.Controllers.HomeController.Index (Practical20)'
+2023-07-12 14:35:28.502 +05:30 [INF] HTTP GET / responded 200 in 451.9433 ms
+2023-07-12 14:35:28.530 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/ - - - 200 - text/html;+charset=utf-8 515.7289ms
+2023-07-12 14:35:28.532 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0 - -
+2023-07-12 14:35:28.534 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/Practical20.styles.css?v=o6EZYILgNBoquticJ_uSlfPPArj73yyc3tZCSxxoW1Q - -
+2023-07-12 14:35:28.534 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/lib/bootstrap/dist/css/bootstrap.min.css - -
+2023-07-12 14:35:28.532 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - -
+2023-07-12 14:35:28.565 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/lib/bootstrap/dist/js/bootstrap.bundle.min.js - -
+2023-07-12 14:35:28.565 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/lib/jquery/dist/jquery.min.js - -
+2023-07-12 14:35:28.578 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - -
+2023-07-12 14:35:28.600 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - -
+2023-07-12 14:35:28.625 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 92.6603ms
+2023-07-12 14:35:28.627 +05:30 [INF] The file /lib/jquery/dist/jquery.min.js was not modified
+2023-07-12 14:35:28.627 +05:30 [INF] The file /css/site.css was not modified
+2023-07-12 14:35:28.627 +05:30 [INF] The file /Practical20.styles.css was not modified
+2023-07-12 14:35:28.627 +05:30 [INF] The file /lib/bootstrap/dist/css/bootstrap.min.css was not modified
+2023-07-12 14:35:28.627 +05:30 [INF] The file /lib/bootstrap/dist/js/bootstrap.bundle.min.js was not modified
+2023-07-12 14:35:28.627 +05:30 [INF] The file /js/site.js was not modified
+2023-07-12 14:35:28.628 +05:30 [INF] HTTP GET /lib/jquery/dist/jquery.min.js responded 304 in 33.6037 ms
+2023-07-12 14:35:28.628 +05:30 [INF] HTTP GET /css/site.css responded 304 in 42.1663 ms
+2023-07-12 14:35:28.629 +05:30 [INF] HTTP GET /Practical20.styles.css responded 304 in 36.0685 ms
+2023-07-12 14:35:28.629 +05:30 [INF] HTTP GET /lib/bootstrap/dist/css/bootstrap.min.css responded 304 in 36.0396 ms
+2023-07-12 14:35:28.630 +05:30 [INF] HTTP GET /lib/bootstrap/dist/js/bootstrap.bundle.min.js responded 304 in 35.4188 ms
+2023-07-12 14:35:28.630 +05:30 [INF] HTTP GET /js/site.js responded 304 in 34.8034 ms
+2023-07-12 14:35:28.631 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/lib/jquery/dist/jquery.min.js - - - 304 - text/javascript 66.5762ms
+2023-07-12 14:35:28.632 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0 - - - 304 - text/css 99.8332ms
+2023-07-12 14:35:28.634 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/Practical20.styles.css?v=o6EZYILgNBoquticJ_uSlfPPArj73yyc3tZCSxxoW1Q - - - 304 - text/css 99.8363ms
+2023-07-12 14:35:28.636 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/lib/bootstrap/dist/css/bootstrap.min.css - - - 304 - text/css 102.1259ms
+2023-07-12 14:35:28.638 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 304 - text/javascript 73.0072ms
+2023-07-12 14:35:28.641 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - - - 304 - text/javascript 62.8951ms
+2023-07-12 14:35:28.706 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 106.6782ms
+2023-07-12 14:35:36.400 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/Home/Ambiguous - -
+2023-07-12 14:35:36.406 +05:30 [INF] Executing endpoint 'Practical20.Controllers.HomeController.Ambiguous (Practical20)'
+2023-07-12 14:35:36.408 +05:30 [INF] Route matched with {action = "Ambiguous", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Ambiguous() on controller Practical20.Controllers.HomeController (Practical20).
+2023-07-12 14:35:36.413 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 300
+2023-07-12 14:35:36.415 +05:30 [INF] Executed action Practical20.Controllers.HomeController.Ambiguous (Practical20) in 4.6336ms
+2023-07-12 14:35:36.415 +05:30 [INF] Executed endpoint 'Practical20.Controllers.HomeController.Ambiguous (Practical20)'
+2023-07-12 14:35:36.416 +05:30 [INF] HTTP GET /Home/Ambiguous responded 302 in 13.3394 ms
+2023-07-12 14:35:36.417 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/Home/Ambiguous - - - 302 0 - 17.3873ms
+2023-07-12 14:35:36.424 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/ErrorHandler/Ambiguous - -
+2023-07-12 14:35:36.427 +05:30 [INF] Executing endpoint 'Practical20.Controllers.ErrorHandlerController.Ambiguous (Practical20)'
+2023-07-12 14:35:36.431 +05:30 [INF] Route matched with {action = "Ambiguous", controller = "ErrorHandler"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Ambiguous() on controller Practical20.Controllers.ErrorHandlerController (Practical20).
+2023-07-12 14:35:36.435 +05:30 [INF] Executing ViewResult, running view Ambiguous.
+2023-07-12 14:35:36.461 +05:30 [INF] Executed ViewResult - view Ambiguous executed in 27.5869ms.
+2023-07-12 14:35:36.462 +05:30 [INF] Executed action Practical20.Controllers.ErrorHandlerController.Ambiguous (Practical20) in 29.8181ms
+2023-07-12 14:35:36.463 +05:30 [INF] Executed endpoint 'Practical20.Controllers.ErrorHandlerController.Ambiguous (Practical20)'
+2023-07-12 14:35:36.464 +05:30 [INF] HTTP GET /ErrorHandler/Ambiguous responded 200 in 37.7865 ms
+2023-07-12 14:35:36.467 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/ErrorHandler/Ambiguous - - - 200 - text/html;+charset=utf-8 42.4179ms
+2023-07-12 14:35:36.475 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - -
+2023-07-12 14:35:36.475 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - -
+2023-07-12 14:35:36.478 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 3.1339ms
+2023-07-12 14:35:36.508 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 33.6431ms
+2023-07-12 14:35:39.067 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - -
+2023-07-12 14:35:39.069 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 1.5942ms
+2023-07-12 14:35:48.437 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/Home/NotFound - -
+2023-07-12 14:35:48.441 +05:30 [INF] Executing endpoint 'Practical20.Controllers.HomeController.NotFound (Practical20)'
+2023-07-12 14:35:48.443 +05:30 [INF] Route matched with {action = "NotFound", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult NotFound() on controller Practical20.Controllers.HomeController (Practical20).
+2023-07-12 14:35:48.444 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 404
+2023-07-12 14:35:48.444 +05:30 [INF] Executed action Practical20.Controllers.HomeController.NotFound (Practical20) in 0.6541ms
+2023-07-12 14:35:48.445 +05:30 [INF] Executed endpoint 'Practical20.Controllers.HomeController.NotFound (Practical20)'
+2023-07-12 14:35:48.445 +05:30 [INF] HTTP GET /Home/NotFound responded 302 in 5.9653 ms
+2023-07-12 14:35:48.446 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/Home/NotFound - - - 302 0 - 8.6912ms
+2023-07-12 14:35:48.449 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/ErrorHandler/NotFound - -
+2023-07-12 14:35:48.452 +05:30 [INF] Executing endpoint 'Practical20.Controllers.ErrorHandlerController.NotFound (Practical20)'
+2023-07-12 14:35:48.453 +05:30 [INF] Route matched with {action = "NotFound", controller = "ErrorHandler"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult NotFound() on controller Practical20.Controllers.ErrorHandlerController (Practical20).
+2023-07-12 14:35:48.456 +05:30 [INF] Executing ViewResult, running view NotFound.
+2023-07-12 14:35:48.461 +05:30 [INF] Executed ViewResult - view NotFound executed in 5.77ms.
+2023-07-12 14:35:48.462 +05:30 [INF] Executed action Practical20.Controllers.ErrorHandlerController.NotFound (Practical20) in 6.8674ms
+2023-07-12 14:35:48.462 +05:30 [INF] Executed endpoint 'Practical20.Controllers.ErrorHandlerController.NotFound (Practical20)'
+2023-07-12 14:35:48.463 +05:30 [INF] HTTP GET /ErrorHandler/NotFound responded 200 in 12.7335 ms
+2023-07-12 14:35:48.465 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/ErrorHandler/NotFound - - - 200 - text/html;+charset=utf-8 15.6447ms
+2023-07-12 14:35:48.471 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/_vs/browserLink - -
+2023-07-12 14:35:48.472 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - -
+2023-07-12 14:35:48.474 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 2.1148ms
+2023-07-12 14:35:48.498 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 26.4777ms
+2023-07-12 14:35:49.956 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - -
+2023-07-12 14:35:49.958 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7119/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 1.1386ms
