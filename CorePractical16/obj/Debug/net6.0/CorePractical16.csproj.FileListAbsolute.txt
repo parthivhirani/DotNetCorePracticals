@@ -32,3 +32,37 @@ C:\Users\parthiv\Documents\Parthiv\ASP .NET\ASP .NET Practice\CorePractical16\ob
 C:\Users\parthiv\Documents\Parthiv\ASP .NET\ASP .NET Practice\CorePractical16\obj\Debug\net6.0\ref\CorePractical16.dll
 C:\Users\parthiv\Documents\Parthiv\ASP .NET\ASP .NET Practice\CorePractical16\bin\Debug\net6.0\NLog.dll
 C:\Users\parthiv\Documents\Parthiv\ASP .NET\ASP .NET Practice\CorePractical16\bin\Debug\net6.0\NLog.Extensions.Logging.dll
+C:\Users\parthiv\Documents\Parthiv\ASP .NET Core\Practicals\CorePractical16\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\parthiv\Documents\Parthiv\ASP .NET Core\Practicals\CorePractical16\bin\Debug\net6.0\appsettings.json
+C:\Users\parthiv\Documents\Parthiv\ASP .NET Core\Practicals\CorePractical16\bin\Debug\net6.0\CorePractical16.exe
+C:\Users\parthiv\Documents\Parthiv\ASP .NET Core\Practicals\CorePractical16\bin\Debug\net6.0\CorePractical16.deps.json
+C:\Users\parthiv\Documents\Parthiv\ASP .NET Core\Practicals\CorePractical16\bin\Debug\net6.0\CorePractical16.runtimeconfig.json
+C:\Users\parthiv\Documents\Parthiv\ASP .NET Core\Practicals\CorePractical16\bin\Debug\net6.0\CorePractical16.dll
+C:\Users\parthiv\Documents\Parthiv\ASP .NET Core\Practicals\CorePractical16\bin\Debug\net6.0\CorePractical16.pdb
+C:\Users\parthiv\Documents\Parthiv\ASP .NET Core\Practicals\CorePractical16\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\parthiv\Documents\Parthiv\ASP .NET Core\Practicals\CorePractical16\bin\Debug\net6.0\NLog.dll
+C:\Users\parthiv\Documents\Parthiv\ASP .NET Core\Practicals\CorePractical16\bin\Debug\net6.0\NLog.Extensions.Logging.dll
+C:\Users\parthiv\Documents\Parthiv\ASP .NET Core\Practicals\CorePractical16\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\parthiv\Documents\Parthiv\ASP .NET Core\Practicals\CorePractical16\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\parthiv\Documents\Parthiv\ASP .NET Core\Practicals\CorePractical16\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\parthiv\Documents\Parthiv\ASP .NET Core\Practicals\CorePractical16\obj\Debug\net6.0\CorePractical16.csproj.AssemblyReference.cache
+C:\Users\parthiv\Documents\Parthiv\ASP .NET Core\Practicals\CorePractical16\obj\Debug\net6.0\CorePractical16.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\parthiv\Documents\Parthiv\ASP .NET Core\Practicals\CorePractical16\obj\Debug\net6.0\CorePractical16.AssemblyInfoInputs.cache
+C:\Users\parthiv\Documents\Parthiv\ASP .NET Core\Practicals\CorePractical16\obj\Debug\net6.0\CorePractical16.AssemblyInfo.cs
+C:\Users\parthiv\Documents\Parthiv\ASP .NET Core\Practicals\CorePractical16\obj\Debug\net6.0\CorePractical16.csproj.CoreCompileInputs.cache
+C:\Users\parthiv\Documents\Parthiv\ASP .NET Core\Practicals\CorePractical16\obj\Debug\net6.0\CorePractical16.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\parthiv\Documents\Parthiv\ASP .NET Core\Practicals\CorePractical16\obj\Debug\net6.0\CorePractical16.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\parthiv\Documents\Parthiv\ASP .NET Core\Practicals\CorePractical16\obj\Debug\net6.0\staticwebassets\msbuild.CorePractical16.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\parthiv\Documents\Parthiv\ASP .NET Core\Practicals\CorePractical16\obj\Debug\net6.0\staticwebassets\msbuild.build.CorePractical16.props
+C:\Users\parthiv\Documents\Parthiv\ASP .NET Core\Practicals\CorePractical16\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.CorePractical16.props
+C:\Users\parthiv\Documents\Parthiv\ASP .NET Core\Practicals\CorePractical16\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.CorePractical16.props
+C:\Users\parthiv\Documents\Parthiv\ASP .NET Core\Practicals\CorePractical16\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\parthiv\Documents\Parthiv\ASP .NET Core\Practicals\CorePractical16\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\parthiv\Documents\Parthiv\ASP .NET Core\Practicals\CorePractical16\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\parthiv\Documents\Parthiv\ASP .NET Core\Practicals\CorePractical16\obj\Debug\net6.0\scopedcss\bundle\CorePractical16.styles.css
+C:\Users\parthiv\Documents\Parthiv\ASP .NET Core\Practicals\CorePractical16\obj\Debug\net6.0\CorePractical16.csproj.CopyComplete
+C:\Users\parthiv\Documents\Parthiv\ASP .NET Core\Practicals\CorePractical16\obj\Debug\net6.0\CorePractical16.dll
+C:\Users\parthiv\Documents\Parthiv\ASP .NET Core\Practicals\CorePractical16\obj\Debug\net6.0\refint\CorePractical16.dll
+C:\Users\parthiv\Documents\Parthiv\ASP .NET Core\Practicals\CorePractical16\obj\Debug\net6.0\CorePractical16.pdb
+C:\Users\parthiv\Documents\Parthiv\ASP .NET Core\Practicals\CorePractical16\obj\Debug\net6.0\CorePractical16.genruntimeconfig.cache
+C:\Users\parthiv\Documents\Parthiv\ASP .NET Core\Practicals\CorePractical16\obj\Debug\net6.0\ref\CorePractical16.dll
